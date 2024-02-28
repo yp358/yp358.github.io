@@ -1,3 +1,4 @@
+/* GENERAL LAYOUT */
 /* Reset default margin and padding for all elements */
 * {
     margin: 0;
@@ -7,7 +8,6 @@
 /* Apply white background and black text to the entire website */
 body {
     background-color: #fff;
-    color: #000;
     font-family: 'Roboto', sans-serif;
     /* Default font for paragraphs */
 }
@@ -15,14 +15,57 @@ body {
 /* Style headings */
 h1 {
     font-family: 'Helvetica', sans-serif;
+    margin-bottom: 20px;
 }
 
-h2,
+h2 {
+
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+
+}
+
 h3 {
     font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
 }
 
 /* Style paragraphs */
 p {
     font-family: 'Roboto', sans-serif;
+}
+
+br {
+    display: block;
+    /* Convert <br> to a block-level element */
+    margin-bottom: 20px;
+    /* Add spacing between breaks */
+}
+
+/* NAVIGATION BAR */
+/* Apply Flexbox to the navigation bar */
+.flex-nav {
+    display: flex;
+    justify-content: center;
+    /* Align items horizontally */
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style the navigation links */
+.flex-nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    /* Add spacing between links */
+}
+
+/* Hover effect */
+.flex-nav a:hover {
+    background-color: #ddd;
+    /* Light grey background color on hover */
+}
+
+.notice {
+    font-style: oblique;
 }
