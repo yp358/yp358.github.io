@@ -1,0 +1,28 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply white background and black text to the entire website */
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    /* Default font for paragraphs */
+}
+
+/* Style headings */
+h1 {
+    font-family: 'Helvetica', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Style paragraphs */
+p {
+    font-family: 'Roboto', sans-serif;
+}
