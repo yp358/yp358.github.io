@@ -1,3 +1,15 @@
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 300 to 800*/
+
+.open-sans-headline {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 /* GENERAL LAYOUT */
 /* Reset default margin and padding for all elements */
 * {
@@ -5,14 +17,74 @@
     padding: 0;
 }
 
-/* Apply white background and black text to the entire website */
+header,
+footer {
+    margin-left: -20px;
+    /* Offset the left padding */
+    margin-right: -20px;
+    /* Offset the right padding */
+}
+
+/* Style the header */
+header {
+    display: flex;
+    flex-direction: column;
+    /* Arrange children vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* Black background color for the header */
+    color: #fff;
+    /* White text color */
+    padding: 20px;
+    /* Add padding for spacing */
+
+
+}
+
+.header img {
+    width: 100px;
+    /* Adjust the width of the logo */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Style the footer */
+footer {
+    background-color: #000;
+    /* Black background color for the footer */
+    color: #fff;
+    /* White text color */
+    padding: 20px;
+    /* Add padding for spacing */
+}
+
+/* Apply white background and black text to the body of website */
 body {
-    background-color: #fff;
+    background-image: url('../assets/images/website-bg.png');
+    background-repeat: repeat;
+    /* Cover the entire viewport */
+    background-size: cover;
+    background-position: center;
     font-family: 'Roboto', sans-serif;
     /* Default font for paragraphs */
+    padding-left: 20px;
+    /* Add spacing to the left */
+    padding-right: 20px;
 }
 
 /* Style headings */
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 10px;
+}
+
 h1 {
     font-family: 'Helvetica', sans-serif;
     margin-bottom: 20px;
@@ -33,14 +105,11 @@ h3 {
 /* Style paragraphs */
 p {
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
 }
 
-br {
-    display: block;
-    /* Convert <br> to a block-level element */
-    margin-bottom: 20px;
-    /* Add spacing between breaks */
-}
+/* HEADER */
+header {}
 
 /* NAVIGATION BAR */
 /* Apply Flexbox to the navigation bar */
@@ -57,14 +126,25 @@ br {
     color: black;
     text-decoration: none;
     margin: 0 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
     /* Add spacing between links */
 }
 
 /* Hover effect */
 .flex-nav a:hover {
     background-color: #ddd;
+
     /* Light grey background color on hover */
 }
+
+/* Remove margin-right from the last link */
+.flex-nav a:last-child {
+    margin-right: 0;
+}
+
+
 
 .notice {
     font-style: oblique;
